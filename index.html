@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>提示</title>
+    <style>
+            html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{line-height:1.6;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}body,h1,h2,h3,h4,p,ul,ol,dl,dd,fieldset,textarea{margin:0}fieldset,legend,textarea,input,button{padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;*font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}ul,ol{padding-left:0;list-style-type:none}a img,fieldset{border:0}a{text-decoration:none}
+
+            h1{font-size: 20px;}
+            a,a:visited {color: #576b95;}
+            .text_color{color:#888888}
+            .title_color{color:#000000}
+            .desc{color:#b2b2b2;margin-top:5px}
+            .warn{color:#b71414}
+            .tips{font-size:13px;color:#b2b2b2}
+            html{height:100%;}
+            body{background-color:#ffffff;font-size:14px;}
+            .page_msg{padding:38% 12px 0;text-align:center}
+            .icon_area{margin-bottom:19px}
+            .text_area{margin-bottom:40px}
+            .text_area.title{margin-bottom:12px}
+            .opr_area{margin-bottom:25px}
+            .extra_area{margin-bottom:20px}
+            .extra_area li{display: inline-block;border-left: 1px solid #576b95;line-height: 12px;font-size: 12px;padding: 0 10px;}
+            .extra_area li:first-child{border:none;}
+            .icon_msg{width:100px;height:100px;vertical-align:middle;display:inline-block}
+
+            .btn {
+              display: inline-block;
+              margin-left: auto;
+              margin-right: auto;
+              padding-left: 60px;
+              padding-right: 60px;
+              font-size: 18px;
+              text-align: center;
+              text-decoration: none;
+              overflow: visible;
+              border-radius: 5px;
+              -moz-border-radius: 5px;
+              -webkit-border-radius: 5px;
+              box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              -webkit-box-sizing: border-box;
+              color: #09bb07;
+              line-height: 2.3em;
+              -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+            }
+            .btn_primary {
+              border:1px solid #09bb07;
+            }
+
+            @media screen and (min-height:416px){
+                .extra_area{position:fixed;left:0;bottom:0;width:100%}
+            }
+
+            @media screen and (max-height:480px){
+                .page_msg{padding-top:75px;}
+            }
+
+            @media screen and (min-width:340px){
+                .page_msg{padding-left:15px;padding-right:15px;}
+            }
+
+            @media screen and (min-width:375px){
+
+            }
+
+            @media screen and (orientation : landscape){ 
+                .page_msg{padding-top:100px;}
+            }
+
+            .link{color:#000;font-size:18px;padding:7px 10px;margin:12px 0;border:1px solid #ccc;word-wrap: break-word;word-break: break-all;}
+            .minorLink{text-align: center;margin-top:40px;}
+
+        </style>
+  </head>
+  <body>
+  <div class="page_msg">
+      <div class="text_area">
+          <p class="title">已扫描到以下内容</p>
+          <div class="link">预约码：[&nbsp;401868&nbsp;]<br/>预约公墓：[&nbsp;花山公墓&nbsp;]<br/>预约时间：[&nbsp;2020-03-28&nbsp;13:30-15:30&nbsp;]</div>
+          <p class="desc">扫描所得内容并非微信提供，请谨慎使用</p>
+          <p class="desc">如需使用，可通过复制操作获取内容</p>
+      </div>
+      <div class="extra_area">
+          <ul>
+              <li><a href="/redirect/alert_help?lang=zh_CN" class="page_opr_link">详情</a></li><li><a href="javascript:reportURL();" class="page_opr_link">举报</a></li>
+          </ul>
+      </div>
+  </div>
+	<script>
+		var content = "预约码：[&nbsp;401868&nbsp;]<br/>预约公墓：[&nbsp;花山公墓&nbsp;]<br/>预约时间：[&nbsp;2020-03-29&nbsp;13:30-15:30&nbsp;]";
+        function reportURL(){
+			window.location = "http://jubao.qq.com/cn/jubao?appname=wireless&subapp=weixin&jubaotype=url&uin=0&originuin=&url=" + encodeURIComponent(encodeURIComponent(content));
+        }
+	</script>
+
+  </body>
+</html>
